@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="40" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.example.shoptest.control.MainController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+    <Label text="Shopping mate">
+        <font>
+            <Font name="Verdana Bold" size="36.0" />
+        </font>
+    </Label>
+
+    <Label text="Who want to use the software?">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+
+    <HBox alignment="CENTER" spacing="20.0">
+        <Button fx:id="AdminLogin" onAction="#showAdminLogin" text="Admin" textAlignment="CENTER">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Button fx:id="UserLogin" onAction="#showUserLogin" text="User" textAlignment="CENTER">
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+    </HBox>
+
+</VBox>

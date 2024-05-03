@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="test.example.shoptest.control.UserController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <!-- VBox per organizzare gli elementi verticalmente -->
+    <VBox alignment="CENTER" spacing="20">
+        <!-- Scritta di benvenuto per l'admin -->
+        <Label text="Welcome user, what do you want to do?"/>
+
+        <!-- HBox per organizzare i bottoni orizzontalmente -->
+        <HBox spacing="20">
+            <!-- Bottone per il Product Management -->
+            <Button text="See products"/>
+
+            <!-- Bottone per il Sales Management -->
+            <Button text="Go to your chart"/>
+        </HBox>
+
+        <!-- Bottone per il Log Out -->
+        <Button fx:id="UserLogoutButton" onAction="#userLogout" text="Log Out"/>
+    </VBox>
+
+</AnchorPane>

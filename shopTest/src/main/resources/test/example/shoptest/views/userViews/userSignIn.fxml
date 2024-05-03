@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.example.shoptest.control.UserController">
+
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+        <Rectangle height="400.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+            <fill>
+                <LinearGradient>
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.36903542280197144" green="0.11999999731779099" blue="1.0" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+      <Button fx:id="BackToLoginButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToLoginFunction" text="Back to login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </AnchorPane>
+
+    <AnchorPane prefHeight="400.0" prefWidth="400.0">
+        <Label layoutX="163.0" layoutY="70.0" text="Sign In" textAlignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="117.0" layoutY="146.0" text="e-mail:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+            <Label layoutX="95.0" layoutY="183.0" text="username: ">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="97.0" layoutY="221.0" text="password: ">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+        <TextField fx:id="emailField" layoutX="170.0" layoutY="142.0" promptText="email@example.com" />
+        <TextField fx:id="usernameField" layoutX="170.0" layoutY="180.0" promptText="username" />
+        <PasswordField fx:id="passwordField" layoutX="170.0" layoutY="218.0" promptText="**********" />
+        <Button fx:id="CreateUserButton" layoutX="158.0" layoutY="270.0" mnemonicParsing="false" onAction="#createUserFunction" text="Create account" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+
+    </AnchorPane>
+
+</HBox>

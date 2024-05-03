@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.example.shoptest.control.PrManController">
+
+    <!-- Aggiunta di una VBox per organizzare gli elementi verticalmente -->
+    <VBox alignment="CENTER" spacing="20" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0">
+        <fill>
+            <RadialGradient centerX="0.5308370380149539" centerY="0.5" focusAngle="-119.74" radius="0.5">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="0.0748538002371788" green="0.47126704454421997" blue="0.8421052694320679" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="0.5179727077484131" green="0.7599298357963562" blue="0.9578947424888611" />
+                        </color>
+                    </Stop>
+                </stops>
+            </RadialGradient>
+        </fill>
+    </Rectangle>
+   <Button fx:id="BackToHomeButton" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#backToHomeFunction" text="Back to home">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Label layoutX="196.0" layoutY="115.0" prefHeight="27.0" prefWidth="210.0" text="What do you want to do? ">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Button fx:id="ShowCreatePrButton" layoutX="157.0" layoutY="169.0" mnemonicParsing="false" onAction="#showCreatePrFunction" prefHeight="30.0" prefWidth="288.0" text="Create a new product">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="ModifyPrButton" layoutX="157.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="288.0" text="Modify a product discount percentage">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="ViewPrButton" layoutX="157.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="288.0" text="View the products">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+
+
+
+</AnchorPane>
